@@ -1,0 +1,22 @@
+#Section-01{
+    background-color: bisque;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 50px 50px 50px 50px;
+    border: 3px solid red;
+}
+/* #Section-01 h1{
+    font-size: 30px;
+    color: black;
+} */
+
+/* #Section-02{
+    background-color: rgb(19, 67, 112);
+}
+h1,h2,h3{
+    background-color: rgb(5, 54, 38);
+    color: white;
+} */
