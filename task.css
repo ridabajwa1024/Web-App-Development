@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(24, 37, 115);
+}
+h1{
+    color: white
+    ;
+}
+p{
+    color: white
+    ;
+    font-size: 20px;
+}
+#section-01{
+    background-color: rgb(132, 4, 26);
+    padding: 30px;
+    margin-top: 70px;
+    margin: 40px;
+    border-radius: 10px;
+    width: 400px;
+}
+#List{
+    color: white;
+    font-size: 20px;
+}
+button{
+    color: white;
+    background-color: rgb(3, 92, 89);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid black;
+}
