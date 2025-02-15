@@ -3,59 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Document</title>
 </head>
+<style>
+   nav{
+    display: flex;
+    background-color: blue;
+    color: white;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+   }
+   #content{
+    padding-right: 50px;
+  
+    align-items: center;
+   }
+   #content ul{
+    display: flex;
+    list-style: none;
+    padding-right: 40px;
+    
+   }
+   ul li{
+    height: 20px;
+    padding-right:30px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* font-weight: bold; */
+    border-radius: 6px;
+    
+   }
+ ul li:hover{
+    background-color: rgba(255, 255, 255, 0.493)
+    ;
+    
+  }
+</style>
 <body>
-    <Table border="1">
-        <thead bgcolor="pink">
-            <tr>
-                <th>Device</th>
-                <th>Brand</th>
-                <th colspan="4">Specifications</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Smartphone</td>
-                <td>Apple</td>
-                <td>
-                <table border="1">
-                <thead bgcolor="yellow">
-                    <tr>
-                        <th>Modal</th>
-                        <th>Storage</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>iPhone 12 Pro</td>
-                        <td>256GB</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>iPhone SE</td>
-                        <td>128GB</td>
-                    </tr>
-                </table>
-            </td>
-                </tbody>
-            </tr>
-        </tbody>
-        <tbody>
-            <tr>
-                <td>Laptop</td>
-                <td>HP</td>
-                <td>15.6" Display</td>
-            </tr>
-        </tbody>
-        <tbody>
-            <tr>
-                <td>Tablet</td>
-                <td>Samusung</td>
-                <td>10.5" Display</td>
-            </tr>
-        </tbody>
-    </Table>
+    <nav>
+        <div id="logo">
+        <h2>CodingNepal</h2>
+    </div>
+    <div id="content">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Feedback</li>
+        </ul>
+    </div>
+    </nav>
 </body>
 </html>
