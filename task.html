@@ -1,119 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-    footer{
-        display: block;
-        text-align: center;
-      /* justify-content:center; */
-      background-color: rgb(3, 12, 72);
-      margin: 0% auto;
-   
-    }
-    div{
-       font-size: 16px;
-        color: white;
-        width: 500px;
-        text-align: center;
-        padding-right: 20px;
-    }
-   ul li{
-        list-style: none;
-        font-size: 14px;
-    }
-    #Box{
-        display: flex;
-    }
-    #icons{
-        display: flex;
-    }
+  body{
+    background-color: rgb(8, 115, 115);
+ align-items: center;
+  }
+.container{
+  display: block;
+  width: 300px;
+  height: 350px;
+ margin-top: 30px;
+background: #ffffff;
+text-align: center;
+padding: 20px;
+  border-radius: 40px;
+  margin: 0% auto;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: rgb(8, 115, 115);
+}
+/* input{
+  margin-top: 13px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 50px;
+border: 1px solid rgba(155, 155, 155, 0.67);} */
+.icons i{
+  font-size: 22px;
+  color: white;
+  background-color: rgba(167, 165, 165, 0.719);
+  margin-right: 15px;
+  border-radius: 50px;
+  padding: 9px;
+  text-align: center;
+  
+}
+button{
+  margin-top: 13px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 50px;
+color: white;
+background-color: rgb(8, 115, 115) ;
+border: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.input-container{
+  display: flex;
+  border: 1px solid rgba(186, 184, 184, 0.789);
+  margin-top: 13px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 50px;
+
+}
+input{
+  border: none;
+}
+input:focus{
+  outline: none;
+}
+.input-container i{
+  font-size: 17px;
+  color: rgb(136, 134, 134);
+  margin-right: 10px;
+  margin-left: 10px;
+}
 </style>
 <body>
-    <footer>
-        <div id="Box">
-        <div>
-            <ul>
-                <li><h1>Top Tutorials</h1></li>
-                <li>Html Tutorial</li>
-                <li>Css Tutorial</li>
-                <li>JavaScript Tutorial </li>
-                <li>How to Tutorial</li>
-                <li>SQL Tutorial</li>
-                <li>Phython Tutorial</li>
-                <li>W3.CSS Tutorial</li>
-                <li>Bootstrap Tutorial</li>
-                <li>PHP Tutorial</li>
-                <li>Java Tutorial</li>
-                <li>C++ Tutorial</li>
-                <li>JQuery Tutorial</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li><h1>Top References</h1></li>
-                <li>Html References</li>
-                <li>CSS References</li>
-                <li>JavaScript References</li>
-                <li>SQL References</li>
-                <li>Phython References</li>
-                <li>W3.CSS References</li>
-                <li>Bootstrap References</li>
-                <li>PhP References</li>
-                <li>HTML Colors</li>
-                <li>Java References</li>
-                <li>Angular References</li>
-                <li>JQuery References</li>
-            </ul>
-        </div>
-        <div> 
-            <ul>
-                <li><h1>Top Examples </h1></li>
-                <li>Html Examples</li>
-                <li>CSS Examples</li>
-                <li>JavaScript Examples</li>
-                <li>How to Examples</li>
-                <li>SQL Examples</li>
-                <li>Phython Examples</li>
-                <li>W3.CSS Examples</li>
-                <li>Bootstrap Examples</li>
-                <li>PHP Examples</li>
-                <li>Java Examples</li>
-                <li>XML Examples</li>
-                <li>JQuery Examples</li>
-            </ul>
-        </div> 
-        <div>
-            <ul>
-                <li><h1>Get Certified</h1></li>
-                <li>Html  Certified</li>
-                <li>CSS  Certified</li>
-               <li>JavaScript  Certified</li>
-               <li>Front End  Certified</li>
-               <li>SQL  Certified</li>
-               <li>Phython Certified</li>
-               <li>PHP  Certified</li>
-               <li>JQuery  Certified</li>
-               <li>Java  Certified</li>
-               <li>C++  Certified</li>
-               <li>C#  Certified</li>
-               <li>XML  Certified</li>
-            </ul>
-        </div>
+  <div class="container">
+    <h1>Register Here</h1>
+    <div class="icons">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
     </div>
-        <div id="icons">
-            <div>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-x-twitter"></i>
 
-            </div>
-        </div>
-    </footer>
+<div class="input-container">
+  <i class="fa-solid fa-user"></i>
+  <input type="text" placeholder="Name" >
+</div>
+<div class="input-container">
+  <i class="fa-solid fa-envelope"></i>
+  <input type="email" placeholder="Email">
+</div>
+
+<div class="input-container">
+  <i class="fa-solid fa-key"></i>
+  <input type="password" placeholder="Password">
+</div>
+
+<button>Register</button>
+  </div>
 </body>
 </html>
