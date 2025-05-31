@@ -1,101 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
-  body{
-    background-color: rgb(8, 115, 115);
- align-items: center;
-  }
-.container{
-  display: block;
-  width: 300px;
-  height: 350px;
- margin-top: 30px;
-background: #ffffff;
-text-align: center;
-padding: 20px;
-  border-radius: 40px;
-  margin: 0% auto;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: rgb(8, 115, 115);
-}
-/* input{
-  margin-top: 13px;
-  width: 250px;
-  padding: 10px;
-  border-radius: 50px;
-border: 1px solid rgba(155, 155, 155, 0.67);} */
-.icons i{
-  font-size: 22px;
-  color: white;
-  background-color: rgba(167, 165, 165, 0.719);
-  margin-right: 15px;
-  border-radius: 50px;
-  padding: 9px;
-  text-align: center;
-  
-}
-button{
-  margin-top: 13px;
-  width: 250px;
-  padding: 10px;
-  border-radius: 50px;
-color: white;
-background-color: rgb(8, 115, 115) ;
-border: none;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.input-container{
-  display: flex;
-  border: 1px solid rgba(186, 184, 184, 0.789);
-  margin-top: 13px;
-  width: 250px;
-  padding: 10px;
-  border-radius: 50px;
+    #container {
+       
+        width: 300px;
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
 
-}
-input{
-  border: none;
-}
-input:focus{
-  outline: none;
-}
-.input-container i{
-  font-size: 17px;
-  color: rgb(136, 134, 134);
-  margin-right: 10px;
-  margin-left: 10px;
-}
+    #container input {
+        padding: 10px;
+        border-radius: 3px;
+        border: none;
+        border: 1px solid rgb(180, 180, 180);
+        margin-top: 10px;
+        width: 250px;
+    }
+
+    #container input:focus {
+        outline: none;
+    }
+
+    #container button {
+
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid rgb(180, 180, 180);
+        margin-top: 10px;
+        background-color: green;
+        color: white;
+        width: 250px;
+        cursor: pointer;
+    }
 </style>
+
 <body>
-  <div class="container">
-    <h1>Register Here</h1>
-    <div class="icons">
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
+    <div id="container">
+        <input type="text" placeholder="Enter Name" id="Student-name">
+        <input type="text" placeholder="Enter Marks" id="Student-marks">
+        <Button onclick="add()">Add Student</Button>
+        <div id="student-list"></div>
+
     </div>
 
-<div class="input-container">
-  <i class="fa-solid fa-user"></i>
-  <input type="text" placeholder="Name" >
-</div>
-<div class="input-container">
-  <i class="fa-solid fa-envelope"></i>
-  <input type="email" placeholder="Email">
-</div>
-
-<div class="input-container">
-  <i class="fa-solid fa-key"></i>
-  <input type="password" placeholder="Password">
-</div>
-
-<button>Register</button>
-  </div>
 </body>
+<script>
+    function add() {
+        const name = document.getElementById("Student-name").value
+        const mark = document.getElementById("Student-marks").value
+
+        if (name === "") {
+            alert("please fill name feild")
+        }
+        else if (mark === "") {
+            alert("please fill marks feild")
+        }
+
+        const div1 = document.createElement("div")
+        div1.className = "students"
+
+        const div1Para = document.createElement("p")
+        div1Para.innerHTML = `<strong>Name:</strong> ${name} <br><strong>Marks:</strong> ${mark}`
+
+        const div1button = document.createElement("button")
+        div1button.className = "delbutton"
+        div1button.textContent = "Delete"
+        div1button.style.backgroundColor = 'red'
+        div1button.style.color = 'white'
+        div1button.style.padding = '10px'
+        div1button.onclick = function () {
+            div1.remove()
+        }
+        div1.appendChild(div1Para)
+        div1.appendChild(div1button)
+
+        document.getElementById("student-list").appendChild(div1)
+
+        if(mark < 40){
+            div1Para.style.backgroundColor="red"
+             div1Para.style.color="white"
+            div1Para.style.padding="10px"
+        }
+        else{
+           div1Para.style.backgroundColor="lightblue"
+            div1Para.style.color="white"
+    div1Para.style.padding="10px"
+
+        }
+    }
+    document.getElementById("Student-name").value=""
+    document.getElementById("Student-marks").value=""
+</script>
+
 </html>
